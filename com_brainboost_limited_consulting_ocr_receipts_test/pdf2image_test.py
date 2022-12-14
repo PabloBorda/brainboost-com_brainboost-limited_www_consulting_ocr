@@ -1,0 +1,4 @@
+from com_brainboost_limited_consulting_ocr_receipts.PDF2ImageConverter import PDF2ImageConverter
+
+
+PDF2ImageConverter.convert('receipts/WPE_Invoice_INV02737537.pdf')

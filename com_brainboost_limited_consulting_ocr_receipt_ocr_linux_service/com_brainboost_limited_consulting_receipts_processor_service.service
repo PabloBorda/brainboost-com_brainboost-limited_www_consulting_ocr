@@ -1,0 +1,11 @@
+[Unit]
+Description= PICKS NEW IMAGE FILES, ORIGINAL IMAGES AND THE ONES GENERATED FROM THE PDFs CONVERTER PROCESS AND RETURNS A JSON DATABASE DOCUMENT WITH ALL IMPORTANT VALUES FOUND
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/com_brainboost_limited_consulting_receipt_ocr
+ExecStart=/usr/local/bin/python /com_brainboost_limited_consulting_receipt_ocr/digitzs_receipts_processor_daemon.py
+
+[Install]
+WantedBy=multi-user.target

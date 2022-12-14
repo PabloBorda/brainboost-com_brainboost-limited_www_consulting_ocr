@@ -1,0 +1,11 @@
+[Unit]
+Description=DIGITZS PDF2IMAGE BATCH PROCESSING FOR SCANNING RECEIPTS IN ORDER TO EXTRACT RELEVANT DATA AUTOMAGICALLY
+After=multi-user.target
+
+[Service]
+Type=simple
+WorkingDirectory=/com_brainboost_limited_consulting_receipt_ocr
+ExecStart=/usr/local/bin/python /com_brainboost_limited_consulting_receipt_ocr/digitzs_batch_receipt_converter_daemon.py
+
+[Install]
+WantedBy=multi-user.target
